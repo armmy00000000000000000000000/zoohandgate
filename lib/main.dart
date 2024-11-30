@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:zoohandgate/home.dart';
+import 'package:zoohandgate/home_web.dart';
 import 'package:zoohandgate/login/login.dart';
 
 void main() {
@@ -73,7 +74,7 @@ class _CheckAuthState extends State<CheckAuth> {
   }
 
   Widget _buildSplashViewWithText() {
-    return Home();
+    return AutoScanExample();
   }
 
   Widget _buildSplashViewWithAnimatedText() {

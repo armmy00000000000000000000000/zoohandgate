@@ -40,6 +40,8 @@ dependencies:
   get: ^4.1.4
   shared_preferences: ^2.2.2
   http: ^0.13.6
+  flutter_web_qrcode_scanner: ^1.1.1
+ 
 
 dev_dependencies:
   flutter_test:

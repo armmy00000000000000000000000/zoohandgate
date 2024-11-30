@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:zoohandgate/home.dart';
+import 'package:zoohandgate/home_web.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key});
@@ -122,6 +123,6 @@ class _LoginState extends State<Login> {
   void _login() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setString('token','00000002222222'); // บันทึกสถานะเข้าสู่ระบบ
-    Get.off(Home()); // ไปยังหน้าหลักหลังจากเข้าสู่ระบบ
+    Get.off(AutoScanExample()); // ไปยังหน้าหลักหลังจากเข้าสู่ระบบ
   }
 }
